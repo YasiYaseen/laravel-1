@@ -36,5 +36,5 @@
   <div>
     {{$users->links()}}
   </div>
-
+{{session()->get('user_name')}}
 @endsection
