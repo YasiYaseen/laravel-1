@@ -13,6 +13,9 @@ class LoginController extends Controller
         $name = "Jishad";
         $age = 30;
         session()->put('user_name','yaseen');
+        session()->flash('hello','hello world');
+        session()->forget('hello');
+        session()->flush();
         $record = ['one', 'two', 'three', 'four'];
         $users = User::all();
         $user = User::find(5);
